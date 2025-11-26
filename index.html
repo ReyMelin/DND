@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DND Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome! I'm your DND sidekick!</h1>
+    </header>
+    
+    <main>
+        <div class="container">
+            <p>Let the adventure begin!</p>
+            
+            <!-- Ability Scores Section -->
+            <section id="ability-scores-section">
+                <h2>Ability Scores</h2>
+                <p class="section-description">Click on an ability score to learn more about it!</p>
+                <div id="ability-scores-grid">
+                    <div class="ability-card" data-ability="str">
+                        <div class="ability-icon">💪</div>
+                        <h3>Strength</h3>
+                        <p class="ability-abbr">STR</p>
+                        <p class="ability-hint">Physical power</p>
+                    </div>
+                    <div class="ability-card" data-ability="dex">
+                        <div class="ability-icon">🎯</div>
+                        <h3>Dexterity</h3>
+                        <p class="ability-abbr">DEX</p>
+                        <p class="ability-hint">Agility & reflexes</p>
+                    </div>
+                    <div class="ability-card" data-ability="con">
+                        <div class="ability-icon">❤️</div>
+                        <h3>Constitution</h3>
+                        <p class="ability-abbr">CON</p>
+                        <p class="ability-hint">Endurance & health</p>
+                    </div>
+                    <div class="ability-card" data-ability="int">
+                        <div class="ability-icon">🧠</div>
+                        <h3>Intelligence</h3>
+                        <p class="ability-abbr">INT</p>
+                        <p class="ability-hint">Reasoning & memory</p>
+                    </div>
+                    <div class="ability-card" data-ability="wis">
+                        <div class="ability-icon">🦉</div>
+                        <h3>Wisdom</h3>
+                        <p class="ability-abbr">WIS</p>
+                        <p class="ability-hint">Awareness & insight</p>
+                    </div>
+                    <div class="ability-card" data-ability="cha">
+                        <div class="ability-icon">✨</div>
+                        <h3>Charisma</h3>
+                        <p class="ability-abbr">CHA</p>
+                        <p class="ability-hint">Force of personality</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Chatbot Window -->
+    <div id="chatbot-container">
+        <div id="chatbot-header">
+            <h3>D&D Assistant</h3>
+            <div>
+                <button id="chatbot-clear" title="Clear history">🗑️</button>
+                <button id="chatbot-toggle">−</button>
+            </div>
+        </div>
+        <div id="chatbot-body">
+            <div id="chat-messages"></div>
+            <div id="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Ask about D&D content...">
+                <button id="chat-send">Send</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 DND Project</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
